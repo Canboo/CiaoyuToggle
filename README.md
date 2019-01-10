@@ -23,7 +23,14 @@ Demo on [https://canboo.github.io/CiaoToggle/](https://canboo.github.io/CiaoTogg
 
 要觸發效果的標籤 `<input type="checkbox">` 、 `<input type="radio">` 或 `<select>` 給予 `id` 屬性，以及 `class` 屬性給於 `ciao-toggle` 類別
 ``` html
-<input class="ciao-toggle" type="checkbox" id="something">
+<input class="ciao-toggle" type="checkbox" id="somethingA">
+<input class="ciao-toggle" type="radio" id="somethingB">
+```
+Or
+``` html
+<select class="ciao-toggle" id="somethingC">
+...
+</select>
 ```
 
 給予要動態顯示的區塊 `data-ciao-toggle` 屬性
