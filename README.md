@@ -1,11 +1,12 @@
 Ciao Toggle
 =====
-Demo on [https://canboo.github.io/CiaoToggle/](https://canboo.github.io/CiaoToggle/).
+一個簡易切換元素顯示與否的函式。取名為 Ciao Toggle 以表達我對女兒-蕎羽的思念與回憶。
 
-一個簡易切換元素顯示與否的函式。
-取名為 Ciao Toggle 以表達我對女兒-蕎羽的思念與回憶。
-A simple function for toggle element visible.
-Dedicated to my daughter Ciao-Yu.
+A simple function for toggle element visible.Dedicated to my daughter Ciao-Yu.
+
+
+## 範例 Demo
+Demo on [https://canboo.github.io/CiaoToggle/](https://canboo.github.io/CiaoToggle/).
 
 
 ## 引用 Quick start
@@ -35,7 +36,7 @@ Dedicated to my daughter Ciao-Yu.
 <div data-ciao-toggle="something" data-ciao-val="1">...</div>
 ```
 
-### 呼叫函式觸發 Via Javascript
+#### 呼叫函式觸發 Via Javascript
 使用 `ciaoToggle()`
 ```js
 $('.selector').ciaoToggle();
@@ -44,26 +45,26 @@ $('.selector').ciaoToggle();
 
 ## 說明 Documentation
 
-### 單一
+#### 單一
 > 在 `id="something"` 的元素被選取時顯示
 ``` html
 <div data-ciao-toggle="something">...</div>
 ```
 
-### 複數 (使用 `,`)
+#### 複數 (使用 `,`)
 > 在 `id="something1"` 或 `id="something2"` 的元素被選取時顯示
 ``` html
 <div data-ciao-toggle="something1,something2">...</div>
 ```
 
-### 同時成立 (使用 `+`)
+#### 同時成立 (使用 `+`)
 > 在 `id="something1"` 及 `id="something2"` 的元素被選取時顯示
 ``` html
 <div data-ciao-toggle="something1+something2">...</div>
 ```
 
-### 對應下拉 (需增加 `data-ciao-val` 屬性，可使用複數 `,`)
-> 在 `id="something1"` 及 `id="something2"` 的元素被選取時顯示
+#### 對應下拉 (需增加 `data-ciao-val` 屬性，可使用複數 `,`)
+> 在 `id="something1"` 的元素選取特定值時顯示
 ``` html
-<div data-ciao-toggle="something1+something2" data-ciao-val="1">...</div>
+<div data-ciao-toggle="something1" data-ciao-val="1">...</div>
 ```
