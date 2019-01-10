@@ -66,8 +66,10 @@
         return $('#'+e).is(":checked");
     }
     // ciaoToggle DATA-API
-    toggleScan();
-    $('.ciao-toggle').each(function() {
-        $(this).ciaoToggle();
+    $(function () {
+        toggleScan();
+        $('.ciao-toggle').each(function() {
+            $(this).ciaoToggle();
+        });
     });
 })(jQuery);
