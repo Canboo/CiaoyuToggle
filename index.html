@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="rating" content="general" />
+    <meta name="author" content="Tsai. Cheng Peng (Canboo)"/>
+
+    <title>CiaoToggle.js</title>
+
+    <link rel="author license" href="http://canboo.tw/"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+        /* prevent display data-ciao-toggle element on render page. */
+        [data-ciao-toggle] {
+            display: none;
+        }
+
+        .sample {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 12px;
+        }
+        .sample + h2 {
+            margin-top: 12px;
+        }
+        .result {
+            max-width: 100%;
+            border: 1px dotted #ccc;
+        }
+        .result .row {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CiaoToggle.js</h1>
+        <p class="lead">Please visit <a href="https://github.com/Canboo/CiaoToggle" title="jQuery CiaoToggle plugin">https://github.com/Canboo/CiaoToggle</a>.</p>
+
+        <h2>單選 radiobox</h2>
+        <div class="sample">
+            <div class="form-check">
+                <input class="form-check-input ciao-toggle" type="radio" name="exampleRadios" id="example1" value="option1">
+                <label class="form-check-label" for="example1">A: 顯示 A 區塊 <small>A: Checked this to display A zone.</small></label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input ciao-toggle" type="radio" name="exampleRadios" id="example2" value="option2">
+                <label class="form-check-label" for="example2">B: 顯示 B 區塊 <small>B: Checked this to display B zone.</small></label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input ciao-toggle" type="radio" name="exampleRadios" id="example3" value="option3">
+                <label class="form-check-label" for="example3">C: 顯示 A 和 B 區塊 <small>C: Checked this to display A and B zone.</small></label>
+            </div>
+            <hr>
+            <p class="lead">result:</p>
+            <div class="result">
+                <div class="row" style="height: 100px; background-color: rgba(255,0,0,0.1);">
+                    <div class="col bg-primary w-50 h-100 text-center" data-ciao-toggle="example1,example3">A Zone<br>data-ciao-toggle="example1"<br>or<br>data-ciao-toggle="example1,example3"</div>
+                    <div class="col bg-success w-50 h-100 text-center" data-ciao-toggle="example2,example3">B Zone<br>data-ciao-toggle="example2"<br>or<br>data-ciao-toggle="example2,example3"</div>
+                </div>
+            </div>
+        </div>
+
+        <h2>複選 checkbox</h2>
+        <div class="sample">
+            <div class="form-check">
+                <input class="form-check-input ciao-toggle" type="checkbox" name="exampleCheckbox" id="checkbox1" value="option1">
+                <label class="form-check-label" for="checkbox1">A: 顯示 A 和 D 區塊 <small>A: Checked this to display A and D zone.</small></label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input ciao-toggle" type="checkbox" name="exampleCheckbox" id="checkbox2" value="option2">
+                <label class="form-check-label" for="checkbox2">B: 顯示 B 和 D 區塊 <small>B: Checked to display B and D zone.</small></label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input ciao-toggle" type="checkbox" name="exampleCheckbox" id="checkbox3" value="option3">
+                <label class="form-check-label" for="checkbox3">C: 同時選 A 和 C 以顯示 C 區塊 <small>C: Checked both A and C to display C zone.</small></label>
+            </div>
+            <hr>
+            <p class="lead">result:</p>
+            <div class="result">
+                <div class="row" style="height: 100px; background-color: rgba(255,0,0,0.1);">
+                    <div class="col bg-primary w-50 h-100 text-center" data-ciao-toggle="checkbox1">A Zone<br>data-ciao-toggle="checkbox1"</div>
+                    <div class="col bg-success w-50 h-100 text-center" data-ciao-toggle="checkbox2">B Zone<br>data-ciao-toggle="checkbox2"</div>
+                    <div class="col bg-warning w-50 h-100 text-center" data-ciao-toggle="checkbox1+checkbox3">C Zone<br>data-ciao-toggle="checkbox1+checkbox3"</div>
+                    <div class="col bg-info w-50 h-100 text-center" data-ciao-toggle="checkbox1,checkbox2">D Zone<br>data-ciao-toggle="checkbox1,checkbox2"</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/ciaoToggle.min.js"></script>
+</body>
+</html>
