@@ -2,7 +2,7 @@ Ciao Toggle
 =====
 一個簡易切換元素顯示與否的函式。取名為 Ciao Toggle 以表達我對女兒-蕎羽的思念與回憶。
 
-A simple function for toggle element visible.Dedicated to my daughter Ciao-Yu.
+A simple function for toggle element visible. Dedicated to my daughter Ciao-Yu.
 
 
 ## 範例 Demo
@@ -21,7 +21,7 @@ Demo on [https://canboo.github.io/CiaoToggle/](https://canboo.github.io/CiaoTogg
 
 ## 使用方式 Usage
 
-要觸發效果的標籤 `checkbox` 或 `radio` 給予 `id` 屬性，以及 `class` 屬性給於 `ciao-toggle` 類別
+要觸發效果的標籤 `<input type="checkbox">` 、 `<input type="radio">` 或 `<select>` 給予 `id` 屬性，以及 `class` 屬性給於 `ciao-toggle` 類別
 ``` html
 <input class="ciao-toggle" type="checkbox" id="something">
 ```
@@ -37,7 +37,7 @@ Demo on [https://canboo.github.io/CiaoToggle/](https://canboo.github.io/CiaoTogg
 ```
 
 #### 呼叫函式觸發 Via Javascript
-使用 `ciaoToggle()`
+在場景下如果需要自行定義綁定，請使用 `ciaoToggle()` 函式
 ```js
 $('.selector').ciaoToggle();
 ```
@@ -64,7 +64,7 @@ $('.selector').ciaoToggle();
 ```
 
 #### 對應下拉 (需增加 `data-ciao-val` 屬性，可使用複數 `,`)
-> 在 `id="something1"` 的元素選取特定值時顯示
+> 在 `id="something1"` 的元素選取特定值 1 時顯示
 ``` html
 <div data-ciao-toggle="something1" data-ciao-val="1">...</div>
 ```
