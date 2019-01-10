@@ -30,6 +30,11 @@ Dedicated to my daughter Ciao-Yu.
 <div data-ciao-toggle="something">...</div>
 ```
 
+如果 `data-ciao-toggle` 是對應 `<select>` 標籤，請額外再給予 `data-ciao-val` 屬性，值請填入對應的選項值
+``` html
+<div data-ciao-toggle="something" data-ciao-val="1">...</div>
+```
+
 ### 呼叫函式觸發 Via Javascript
 使用 `ciaoToggle()`
 ```js
@@ -55,4 +60,10 @@ $('.selector').ciaoToggle();
 > 在 `id="something1"` 及 `id="something2"` 的元素被選取時顯示
 ``` html
 <div data-ciao-toggle="something1+something2">...</div>
+```
+
+### 對應下拉 (需增加 `data-ciao-val` 屬性，可使用複數 `,`)
+> 在 `id="something1"` 及 `id="something2"` 的元素被選取時顯示
+``` html
+<div data-ciao-toggle="something1+something2" data-ciao-val="1">...</div>
 ```

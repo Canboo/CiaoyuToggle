@@ -22,30 +22,47 @@
     // element data-value check.
     function checkValue(e){
         var arrVal = e.data('ciao-toggle').split(','),
+            PickVal = e.data('ciao-val'),
             result = false;
         $.each( arrVal, function( key, value ) {
             if ( 0 > value.indexOf('+') ) {
-                result = isToggle( value );
+                result = isToggle( value, PickVal );
             } else {
-                result = checkCombine( value );
+                result = checkCombine( value, PickVal );
             };
             if ( result ) return false;
         });
         return result;
     }
     // combine data check.
-    function checkCombine(v){
+    function checkCombine(v,pick){
         var arrVal = v.split('+'),
             result = false;
         $.each( arrVal, function( key, value ) {
-            result = isToggle( value );
+            result = isToggle( value, pick );
             // if has element not checked return false
             if ( !result ) return false;
         });
         return result;
     }
+    // select value check
+    function checkSelect(e,pick){
+        if ( '' != pick ) {
+            var arr = pick.toString().split(','),
+                v = e.find(":selected").val();
+            if ( 0 <= jQuery.inArray( v, arr ) ) {
+                return true;
+            };
+        };
+        return false;
+    }
     // has checked?
-    function isToggle(e){
+    function isToggle(e,pick){
+        var element = $('#'+e),
+            tag = element.prop("tagName").toLowerCase();
+        if ( 'select' == tag ) {
+            return checkSelect( $('#'+e), pick );
+        };
         return $('#'+e).is(":checked");
     }
     // ciaoToggle DATA-API
