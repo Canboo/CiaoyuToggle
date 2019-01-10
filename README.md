@@ -29,18 +29,19 @@ Demo on [https://canboo.github.io/CiaoToggle/](https://canboo.github.io/CiaoTogg
 Or
 ``` html
 <select class="ciao-toggle" id="somethingC">
+<option value="1">1</option>
 ...
 </select>
 ```
 
-給予要動態顯示的區塊 `data-ciao-toggle` 屬性
+給予要動態顯示的區塊 `data-ciao-toggle` 屬性，值請填入要對應的物件 ID
 ``` html
-<div data-ciao-toggle="something">...</div>
+<div data-ciao-toggle="somethingA">...</div>
 ```
 
 如果 `data-ciao-toggle` 是對應 `<select>` 標籤，請額外再給予 `data-ciao-val` 屬性，值請填入對應的選項值
 ``` html
-<div data-ciao-toggle="something" data-ciao-val="1">...</div>
+<div data-ciao-toggle="somethingC" data-ciao-val="1">...</div>
 ```
 
 #### 呼叫函式觸發 Via Javascript
@@ -75,3 +76,13 @@ $('.selector').ciaoToggle();
 ``` html
 <div data-ciao-toggle="something1" data-ciao-val="1">...</div>
 ```
+
+
+## 備註 Memo
+因為包含 `data-ciao-toggle` 的物件預設不是隱藏，由 Ciao Toggle 在頁面 Render 後才隱藏的話可能會造成畫面閃動，所以建議透過 CSS 先將物件隱藏
+``` CSS
+[data-ciao-toggle] {
+    display: none;
+}
+```
+prevent display data-ciao-toggle element on render page.
