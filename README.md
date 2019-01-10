@@ -1,11 +1,12 @@
 Ciao Toggle
 =====
-Demo on [https://canboo.github.io/HTMLLab/](https://canboo.github.io/HTMLLab/).
+Demo on [https://canboo.github.io/CiaoToggle/](https://canboo.github.io/CiaoToggle/).
 
 一個簡易切換元素顯示與否的函式。
 取名為 Ciao Toggle 以表達我對女兒-蕎羽的思念與回憶。
 A simple function for toggle element visible.
 Dedicated to my daughter Ciao-Yu.
+
 
 ## 引用 Quick start
 
@@ -15,6 +16,7 @@ Dedicated to my daughter Ciao-Yu.
 <script src="ciaoToggle.js"></script>
 </body>
 ```
+
 
 ## 使用方式 Usage
 
@@ -33,6 +35,7 @@ Dedicated to my daughter Ciao-Yu.
 ```js
 $('.selector').ciaoToggle();
 ```
+
 
 ## 說明 Documentation
 
