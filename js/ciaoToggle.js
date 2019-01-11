@@ -1,3 +1,8 @@
+/*
+ Version: 1.1.1
+  Author: Tsai. Cheng Peng
+ Website: https://github.com/Canboo/CiaoToggle
+ */
 (function($){
     "use strict";
     $.fn.ciaoToggle = function(settings){
@@ -47,11 +52,20 @@
     }
     // select value check
     function checkSelect(e,pick){
-        if ( '' != pick ) {
-            var arr = pick.toString().split(','),
-                v = e.find(":selected").val();
-            if ( 0 <= jQuery.inArray( v, arr ) ) {
-                return true;
+        if ( 0 !== pick.length ) {
+            pick = pick.toString();
+            var v = e.find(":selected").val();
+            // val list
+            if ( 0 > pick.indexOf('!') ) {
+                var arr = pick.split(',');
+                if ( 0 <= jQuery.inArray( v, arr ) ) {
+                    return true;
+                };
+            // exclude value
+            } else {
+                if ( '!'+v != pick ) {
+                    return true;
+                };
             };
         };
         return false;

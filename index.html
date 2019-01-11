@@ -94,7 +94,7 @@
             <div class="form-group">
                 <label for="ExSelect">Example select</label>
                 <select name="select" class="form-control ciao-toggle" id="ExSelect">
-                    <option value="0">請選擇</option>
+                    <option value="0">選項0: 請選擇</option>
                     <option value="1">選項1: 顯示 A 區塊</option>
                     <option value="2">選項2: 顯示 B 和 C 區塊</option>
                     <option value="3">選項3: 顯示 C 區塊</option>
@@ -107,6 +107,13 @@
                     <div class="col bg-primary w-50 h-100 text-center" data-ciao-toggle="ExSelect" data-ciao-val="1">A Zone<br>data-ciao-toggle="ExSelect" data-ciao-val="1"</div>
                     <div class="col bg-success w-50 h-100 text-center" data-ciao-toggle="ExSelect" data-ciao-val="2">B Zone<br>data-ciao-toggle="ExSelect" data-ciao-val="2"</div>
                     <div class="col bg-warning w-50 h-100 text-center" data-ciao-toggle="ExSelect" data-ciao-val="2,3">C Zone<br>data-ciao-toggle="ExSelect" data-ciao-val="2,3"</div>
+                </div>
+            </div>
+            <hr>
+            <p class="lead">result: (不是特定數值就出現請使用 ! 符號)</p>
+            <div class="result">
+                <div class="row" style="height: 100px; background-color: rgba(255,0,0,0.1);">
+                    <div class="col bg-primary w-50 h-100 text-center" data-ciao-toggle="ExSelect" data-ciao-val="!0">A Zone<br>data-ciao-toggle="ExSelect" data-ciao-val="!0"</div>
                 </div>
             </div>
         </div>

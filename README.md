@@ -75,6 +75,11 @@ $('.selector').ciaoToggle();
 > 在 `id="something1"` 的元素選取特定值 1 時顯示
 ``` html
 <div data-ciao-toggle="something1" data-ciao-val="1">...</div>
+<div data-ciao-toggle="something1" data-ciao-val="1,2,3">...</div>
+```
+> 在 `id="something1"` 的元素選取特定值不是 0 時顯示 (使用 `!` 符號，`data-ciao-val` 屬性不可複數)
+``` html
+<div data-ciao-toggle="something1" data-ciao-val="!0">...</div>
 ```
 
 
