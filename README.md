@@ -20,13 +20,26 @@ Demo on [https://canboo.github.io/CiaoToggle/](https://canboo.github.io/CiaoTogg
 
 
 ## 使用方式 Usage
+> 觸發效果的元素請給予 `class="ciao-toggle"`
+> 動態顯示的元素 `data-ciao-toggle="對應的物件ID"` 屬性
 
-要觸發效果的標籤 `<input type="checkbox">` 、 `<input type="radio">` 或 `<select>` 給予 `id` 屬性，以及 `class` 屬性給於 `ciao-toggle` 類別
+#### radio / checkbox 範例 Example
+要觸發效果的標籤 `<input type="checkbox">` 或 `<input type="radio">` 給予 `id` 屬性，以及 `class` 屬性給於 `ciao-toggle` 類別
 ``` html
 <input class="ciao-toggle" type="checkbox" id="somethingA">
 <input class="ciao-toggle" type="radio" id="somethingB">
 ```
-Or
+
+給予要動態顯示的元素 `data-ciao-toggle` 屬性，值請填入要對應的物件 ID
+``` html
+<div data-ciao-toggle="somethingA">...</div>
+<div data-ciao-toggle="somethingB">...</div>
+```
+
+#### select 範例 Example
+> 動態顯示的元素除了 `data-ciao-toggle` 屬性還需要 `data-ciao-val` 屬性
+
+要觸發效果的標籤 `<select>` 給予 `id` 屬性，以及 `class` 屬性給於 `ciao-toggle` 類別
 ``` html
 <select class="ciao-toggle" id="somethingC">
 <option value="1">1</option>
@@ -34,12 +47,7 @@ Or
 </select>
 ```
 
-給予要動態顯示的區塊 `data-ciao-toggle` 屬性，值請填入要對應的物件 ID
-``` html
-<div data-ciao-toggle="somethingA">...</div>
-```
-
-如果 `data-ciao-toggle` 是對應 `<select>` 標籤，請額外再給予 `data-ciao-val` 屬性，值請填入對應的選項值
+給予要動態顯示的元素 `data-ciao-toggle` 屬性，值請填入要對應的物件 ID，請額外再給予 `data-ciao-val` 屬性，值請填入對應的選項值
 ``` html
 <div data-ciao-toggle="somethingC" data-ciao-val="1">...</div>
 ```

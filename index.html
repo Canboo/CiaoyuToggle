@@ -31,6 +31,8 @@
         }
         .result .row {
             margin: 0;
+            height: 100px;
+            background-color: rgba(255,0,0,0.1);
         }
     </style>
 </head>
@@ -56,9 +58,13 @@
             <hr>
             <p class="lead">result:</p>
             <div class="result">
-                <div class="row" style="height: 100px; background-color: rgba(255,0,0,0.1);">
-                    <div class="col bg-primary w-50 h-100 text-center" data-ciao-toggle="example1,example3">A Zone<br>data-ciao-toggle="example1"<br>or<br>data-ciao-toggle="example1,example3"</div>
-                    <div class="col bg-success w-50 h-100 text-center" data-ciao-toggle="example2,example3">B Zone<br>data-ciao-toggle="example2"<br>or<br>data-ciao-toggle="example2,example3"</div>
+                <div class="row">
+                    <div class="col bg-primary w-50 h-100 text-center" data-ciao-toggle="example1,example3">
+                        A Zone<br>data-ciao-toggle="example1"<br>or<br>data-ciao-toggle="example1,example3"
+                    </div>
+                    <div class="col bg-success w-50 h-100 text-center" data-ciao-toggle="example2,example3">
+                        B Zone<br>data-ciao-toggle="example2"<br>or<br>data-ciao-toggle="example2,example3"
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,11 +86,19 @@
             <hr>
             <p class="lead">result:</p>
             <div class="result">
-                <div class="row" style="height: 100px; background-color: rgba(255,0,0,0.1);">
-                    <div class="col bg-primary w-50 h-100 text-center" data-ciao-toggle="checkbox1">A Zone<br>data-ciao-toggle="checkbox1"</div>
-                    <div class="col bg-success w-50 h-100 text-center" data-ciao-toggle="checkbox2">B Zone<br>data-ciao-toggle="checkbox2"</div>
-                    <div class="col bg-warning w-50 h-100 text-center" data-ciao-toggle="checkbox1+checkbox3">C Zone<br>data-ciao-toggle="checkbox1+checkbox3"</div>
-                    <div class="col bg-info w-50 h-100 text-center" data-ciao-toggle="checkbox1,checkbox2">D Zone<br>data-ciao-toggle="checkbox1,checkbox2"</div>
+                <div class="row">
+                    <div class="col bg-primary w-50 h-100 text-center" data-ciao-toggle="checkbox1">
+                        A Zone<br>data-ciao-toggle="checkbox1"
+                    </div>
+                    <div class="col bg-success w-50 h-100 text-center" data-ciao-toggle="checkbox2">
+                        B Zone<br>data-ciao-toggle="checkbox2"
+                    </div>
+                    <div class="col bg-warning w-50 h-100 text-center" data-ciao-toggle="checkbox1+checkbox3">
+                        C Zone<br>data-ciao-toggle="checkbox1+checkbox3"
+                    </div>
+                    <div class="col bg-info w-50 h-100 text-center" data-ciao-toggle="checkbox1,checkbox2">
+                        D Zone<br>data-ciao-toggle="checkbox1,checkbox2"
+                    </div>
                 </div>
             </div>
         </div>
@@ -103,17 +117,52 @@
             <hr>
             <p class="lead">result:</p>
             <div class="result">
-                <div class="row" style="height: 100px; background-color: rgba(255,0,0,0.1);">
-                    <div class="col bg-primary w-50 h-100 text-center" data-ciao-toggle="ExSelect" data-ciao-val="1">A Zone<br>data-ciao-toggle="ExSelect" data-ciao-val="1"</div>
-                    <div class="col bg-success w-50 h-100 text-center" data-ciao-toggle="ExSelect" data-ciao-val="2">B Zone<br>data-ciao-toggle="ExSelect" data-ciao-val="2"</div>
-                    <div class="col bg-warning w-50 h-100 text-center" data-ciao-toggle="ExSelect" data-ciao-val="2,3">C Zone<br>data-ciao-toggle="ExSelect" data-ciao-val="2,3"</div>
+                <div class="row">
+                    <div class="col bg-primary w-50 h-100 text-center" data-ciao-toggle="ExSelect" data-ciao-val="1">
+                        A Zone<br>data-ciao-toggle="ExSelect" data-ciao-val="1"
+                    </div>
+                    <div class="col bg-success w-50 h-100 text-center" data-ciao-toggle="ExSelect" data-ciao-val="2">
+                        B Zone<br>data-ciao-toggle="ExSelect" data-ciao-val="2"
+                    </div>
+                    <div class="col bg-warning w-50 h-100 text-center" data-ciao-toggle="ExSelect" data-ciao-val="2,3">
+                        C Zone<br>data-ciao-toggle="ExSelect" data-ciao-val="2,3"
+                    </div>
                 </div>
             </div>
             <hr>
             <p class="lead">result: (不是特定數值就出現請使用 ! 符號)</p>
             <div class="result">
-                <div class="row" style="height: 100px; background-color: rgba(255,0,0,0.1);">
-                    <div class="col bg-primary w-50 h-100 text-center" data-ciao-toggle="ExSelect" data-ciao-val="!0">A Zone<br>data-ciao-toggle="ExSelect" data-ciao-val="!0"</div>
+                <div class="row">
+                    <div class="col bg-primary w-50 h-100 text-center" data-ciao-toggle="ExSelect" data-ciao-val="!0">
+                        A Zone<br>data-ciao-toggle="ExSelect" data-ciao-val="!0"
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>混用 checkbox + select</h2>
+        <p>請勾選 Agree 後選擇 選項1</p>
+        <div class="sample">
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input ciao-toggle" type="checkbox" name="exampleCheckbox" id="mixCheckbox" value="option1">
+                    <label class="form-check-label" for="mixCheckbox">同意 Agree.</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <select name="select" class="form-control ciao-toggle" id="mixSelect">
+                    <option value="0">請選擇</option>
+                    <option value="1">選項1: 有勾選 Agree 就顯示 A 區塊</option>
+                    <option value="2">選項2: 選我不會顯示 A 區塊</option>
+                </select>
+            </div>
+            <hr>
+            <p class="lead">result:</p>
+            <div class="result">
+                <div class="row">
+                    <div class="col bg-primary w-50 h-100 text-center" data-ciao-toggle="mixCheckbox+mixSelect" data-ciao-val="1">
+                        Agree and Select 1<br>data-ciao-toggle="mixCheckbox+mixSelect" data-ciao-val="1"
+                    </div>
                 </div>
             </div>
         </div>
