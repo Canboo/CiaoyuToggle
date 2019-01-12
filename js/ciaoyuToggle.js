@@ -1,11 +1,11 @@
 /*
  Version: 1.1.1
   Author: Tsai. Cheng Peng
- Website: https://github.com/Canboo/CiaoToggle
+ Website: https://github.com/Canboo/CiaoyuToggle
  */
 (function($){
     "use strict";
-    $.fn.ciaoToggle = function(settings){
+    $.fn.ciaoyuToggle = function(settings){
         var def = {
             callback:function(){
                 toggleScan();
@@ -18,15 +18,15 @@
             $(this).on('change', _settings.callback);
         });
     };
-    // scan data-ciao-toggle element
+    // scan data-ciaoyu-toggle element
     function toggleScan(){
-        $('[data-ciao-toggle]').each(function() {
+        $('[data-ciaoyu-toggle]').each(function() {
             $(this).toggle( checkValue($(this)) );
         });
     }
     // element data-value check.
     function checkValue(e){
-        var arrVal = e.data('ciao-toggle').split(','),
+        var arrVal = e.data('ciaoyu-toggle').split(','),
             PickVal = e.data('ciao-val'),
             result = false;
         $.each( arrVal, function( key, value ) {
@@ -79,11 +79,11 @@
         };
         return $('#'+e).is(":checked");
     }
-    // ciaoToggle DATA-API
+    // ciaoyuToggle DATA-API
     $(function () {
         toggleScan();
-        $('.ciao-toggle').each(function() {
-            $(this).ciaoToggle();
+        $('.ciaoyu-toggle').each(function() {
+            $(this).ciaoyuToggle();
         });
     });
 })(jQuery);
