@@ -36,7 +36,7 @@ Demo on [https://canboo.github.io/CiaoyuToggle/](https://canboo.github.io/Ciaoyu
 ```
 
 ### select 範例 Example
-> 動態顯示的元素除了 `data-ciaoyu-toggle` 屬性還需要 `data-ciao-val` 屬性
+> 動態顯示的元素除了 `data-ciaoyu-toggle` 屬性還需要 `data-ciaoyu-val` 屬性
 
 要觸發效果的標籤 `<select>` 給予 `id` 屬性，以及 `class` 屬性給於 `ciaoyu-toggle` 類別
 ``` html
@@ -47,9 +47,9 @@ Demo on [https://canboo.github.io/CiaoyuToggle/](https://canboo.github.io/Ciaoyu
 ```
 
 給予要動態顯示的元素 `data-ciaoyu-toggle` 屬性，值請填入要對應的物件 ID
-請額外再給予 `data-ciao-val` 屬性，值請填入對應的選項值
+請額外再給予 `data-ciaoyu-val` 屬性，值請填入對應的選項值
 ``` html
-<div data-ciaoyu-toggle="somethingC" data-ciao-val="1">...</div>
+<div data-ciaoyu-toggle="somethingC" data-ciaoyu-val="1">...</div>
 ```
 
 ### 呼叫函式觸發 Via Javascript
@@ -79,15 +79,15 @@ $('.selector').ciaoyuToggle();
 <div data-ciaoyu-toggle="something1+something2">...</div>
 ```
 
-#### 對應下拉 (需增加 `data-ciao-val` 屬性，可使用複數 `,`)
+#### 對應下拉 (需增加 `data-ciaoyu-val` 屬性，可使用複數 `,`)
 > 在 `id="something1"` 的元素選取特定值 1 時顯示
 ``` html
-<div data-ciaoyu-toggle="something1" data-ciao-val="1">...</div>
-<div data-ciaoyu-toggle="something1" data-ciao-val="1,2,3">...</div>
+<div data-ciaoyu-toggle="something1" data-ciaoyu-val="1">...</div>
+<div data-ciaoyu-toggle="something1" data-ciaoyu-val="1,2,3">...</div>
 ```
-> 在 `id="something1"` 的元素選取特定值不是 0 時顯示 (使用 `!` 符號，`data-ciao-val` 屬性不可複數)
+> 在 `id="something1"` 的元素選取特定值不是 0 時顯示 (使用 `!` 符號，`data-ciaoyu-val` 屬性不可複數)
 ``` html
-<div data-ciaoyu-toggle="something1" data-ciao-val="!0">...</div>
+<div data-ciaoyu-toggle="something1" data-ciaoyu-val="!0">...</div>
 ```
 
 

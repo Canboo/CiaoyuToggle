@@ -27,7 +27,7 @@
     // element data-value check.
     function checkValue(e){
         var arrVal = e.data('ciaoyu-toggle').split(','),
-            PickVal = e.data('ciao-val'),
+            PickVal = e.data('ciaoyu-val'),
             result = false;
         $.each( arrVal, function( key, value ) {
             if ( 0 > value.indexOf('+') ) {
