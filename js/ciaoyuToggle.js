@@ -1,6 +1,6 @@
 /*
  Version: 1.2.1
-  Author: Tsai. Cheng Peng
+  Author: Tsai. Cheng Peng (Canboo)
  Website: https://github.com/Canboo/CiaoyuToggle
  */
 (function($){

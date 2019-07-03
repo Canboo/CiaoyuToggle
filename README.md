@@ -13,20 +13,20 @@ Demo on [https://canboo.github.io/CiaoyuToggle/](https://canboo.github.io/Ciaoyu
 引用 ciaoyuToggle.js 置於 `</body>` 前
 ``` html
 ...
-<script src="ciaoyuToggle.js"></script>
+<script src="ciaoyuToggle.min.js?v=1.2.1"></script>
 </body>
 ```
 
 
 ## 使用方式 Usage
-> 觸發效果的元素請給予 `class="ciaoyu-toggle"`</br>
+> 觸發效果的元素請給予 `data-ciaoyu="toggle"`</br>
 > 動態顯示的元素 `data-ciaoyu-toggle="對應的物件ID"` 屬性
 
 ### radio / checkbox 範例 Example
-要觸發效果的標籤 `<input type="checkbox">` 或 `<input type="radio">` 給予 `id` 屬性，以及 `class` 屬性給於 `ciaoyu-toggle` 類別
+要觸發效果的標籤 `<input type="checkbox">` 或 `<input type="radio">` 給予 `id` 屬性，以及 `data-ciaoyu="toggle"` 屬性
 ``` html
-<input class="ciaoyu-toggle" type="checkbox" id="somethingA">
-<input class="ciaoyu-toggle" type="radio" id="somethingB">
+<input data-ciaoyu="toggle" type="checkbox" id="somethingA">
+<input data-ciaoyu="toggle" type="radio" id="somethingB">
 ```
 
 給予要動態顯示的元素 `data-ciaoyu-toggle` 屬性，值請填入要對應的物件 ID
@@ -38,9 +38,9 @@ Demo on [https://canboo.github.io/CiaoyuToggle/](https://canboo.github.io/Ciaoyu
 ### select 範例 Example
 > 動態顯示的元素除了 `data-ciaoyu-toggle` 屬性還需要 `data-ciaoyu-val` 屬性
 
-要觸發效果的標籤 `<select>` 給予 `id` 屬性，以及 `class` 屬性給於 `ciaoyu-toggle` 類別
+要觸發效果的標籤 `<select>` 給予 `id` 屬性，以及 `data-ciaoyu="toggle"` 屬性
 ``` html
-<select class="ciaoyu-toggle" id="somethingC">
+<select data-ciaoyu="toggle" id="somethingC">
 <option value="1">1</option>
 ...
 </select>
