@@ -10,9 +10,10 @@ Demo on [https://canboo.github.io/CiaoyuToggle/](https://canboo.github.io/Ciaoyu
 
 ## 引用 Quick start
 
-引用 ciaoyuToggle.js 置於 `</body>` 前
+引用 `jQuery` 及 ciaoyuToggle.js 置於 `</body>` 前
 ``` html
 ...
+<script src="jquery-3.4.1.min.js"></script>
 <script src="ciaoyuToggle.min.js?v=1.2.1"></script>
 </body>
 ```
