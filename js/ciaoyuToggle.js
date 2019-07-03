@@ -1,5 +1,5 @@
 /*
- Version: 1.1.1
+ Version: 1.2.1
   Author: Tsai. Cheng Peng
  Website: https://github.com/Canboo/CiaoyuToggle
  */
@@ -82,7 +82,7 @@
     // ciaoyuToggle DATA-API
     $(function () {
         toggleScan();
-        $('.ciaoyu-toggle').each(function() {
+        $('[data-ciaoyu="toggle"]').each(function() {
             $(this).ciaoyuToggle();
         });
     });

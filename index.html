@@ -46,15 +46,15 @@
         <h2>單選 radiobox</h2>
         <div class="sample">
             <div class="form-check">
-                <input class="form-check-input ciaoyu-toggle" type="radio" name="exampleRadios" id="example1" value="option1">
+                <input class="form-check-input" data-ciaoyu="toggle" type="radio" name="exampleRadios" id="example1" value="option1">
                 <label class="form-check-label" for="example1">A: 顯示 A 區塊 <small>A: Checked this to display A zone.</small></label>
             </div>
             <div class="form-check">
-                <input class="form-check-input ciaoyu-toggle" type="radio" name="exampleRadios" id="example2" value="option2">
+                <input class="form-check-input" data-ciaoyu="toggle" type="radio" name="exampleRadios" id="example2" value="option2">
                 <label class="form-check-label" for="example2">B: 顯示 B 區塊 <small>B: Checked this to display B zone.</small></label>
             </div>
             <div class="form-check">
-                <input class="form-check-input ciaoyu-toggle" type="radio" name="exampleRadios" id="example3" value="option3">
+                <input class="form-check-input" data-ciaoyu="toggle" type="radio" name="exampleRadios" id="example3" value="option3">
                 <label class="form-check-label" for="example3">C: 顯示 A 和 B 區塊 <small>C: Checked this to display A and B zone.</small></label>
             </div>
             <hr>
@@ -74,15 +74,15 @@
         <h2>複選 checkbox</h2>
         <div class="sample">
             <div class="form-check">
-                <input class="form-check-input ciaoyu-toggle" type="checkbox" name="exampleCheckbox" id="checkbox1" value="option1">
+                <input class="form-check-input" data-ciaoyu="toggle" type="checkbox" name="exampleCheckbox" id="checkbox1" value="option1">
                 <label class="form-check-label" for="checkbox1">A: 顯示 A 和 D 區塊 <small>A: Checked this to display A and D zone.</small></label>
             </div>
             <div class="form-check">
-                <input class="form-check-input ciaoyu-toggle" type="checkbox" name="exampleCheckbox" id="checkbox2" value="option2">
+                <input class="form-check-input" data-ciaoyu="toggle" type="checkbox" name="exampleCheckbox" id="checkbox2" value="option2">
                 <label class="form-check-label" for="checkbox2">B: 顯示 B 和 D 區塊 <small>B: Checked to display B and D zone.</small></label>
             </div>
             <div class="form-check">
-                <input class="form-check-input ciaoyu-toggle" type="checkbox" name="exampleCheckbox" id="checkbox3" value="option3">
+                <input class="form-check-input" data-ciaoyu="toggle" type="checkbox" name="exampleCheckbox" id="checkbox3" value="option3">
                 <label class="form-check-label" for="checkbox3">C: 同時選 A 和 C 以顯示 C 區塊 <small>C: Checked both A and C to display C zone.</small></label>
             </div>
             <hr>
@@ -109,7 +109,7 @@
         <div class="sample">
             <div class="form-group">
                 <label for="ExSelect">Example select</label>
-                <select name="select" class="form-control ciaoyu-toggle" id="ExSelect">
+                <select name="select" class="form-control" data-ciaoyu="toggle" id="ExSelect">
                     <option value="0">選項0: 請選擇</option>
                     <option value="1">選項1: 顯示 A 區塊</option>
                     <option value="2">選項2: 顯示 B 和 C 區塊</option>
@@ -147,12 +147,12 @@
         <div class="sample">
             <div class="form-group">
                 <div class="form-check">
-                    <input class="form-check-input ciaoyu-toggle" type="checkbox" name="exampleCheckbox" id="mixCheckbox" value="option1">
+                    <input class="form-check-input" data-ciaoyu="toggle" type="checkbox" name="exampleCheckbox" id="mixCheckbox" value="option1">
                     <label class="form-check-label" for="mixCheckbox">同意 Agree.</label>
                 </div>
             </div>
             <div class="form-group">
-                <select name="select" class="form-control ciaoyu-toggle" id="mixSelect">
+                <select name="select" class="form-control" data-ciaoyu="toggle" id="mixSelect">
                     <option value="0">請選擇</option>
                     <option value="1">選項1: 有勾選 Agree 就顯示 A 區塊</option>
                     <option value="2">選項2: 選我不會顯示 A 區塊</option>
@@ -170,6 +170,6 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="js/ciaoyuToggle.js"></script>
+    <script src="js/ciaoyuToggle.js?v=1.2.1"></script>
 </body>
 </html>
